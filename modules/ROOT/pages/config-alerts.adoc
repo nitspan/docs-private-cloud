@@ -39,5 +39,4 @@ Connection closed.
 
 == See Also
 
-* xref:access-management::private-cloud-edition-features.adoc#smtp[SMTP]
 * xref:managing-via-the-ops-center.adoc[To Manage Anypoint Platform Private Cloud Edition Using Ops Center]

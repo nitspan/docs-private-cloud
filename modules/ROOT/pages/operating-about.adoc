@@ -1,0 +1,14 @@
+= About Managing Anypoint Private Cloud
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+The following topics describe how to manage Anypoint Private Cloud after installation and configuration:
+
+*** xref:managing-via-the-ops-center.adoc[To Manage Anypoint Platform Private Cloud Edition Using Ops Center]
+*** xref:backup-and-disaster-recovery.adoc[To Configure Backup and Restore]
+*** xref:ops-center-update-lic.adoc[To Add a Product License Using Ops Center]
+*** xref:config-alerts.adoc[To Setup Alerts for CPU and Memory Usage]
+*** xref:config-add-proxy-whitelist.adoc[To Add Whitelist Addresses for API Platform Proxies]
+*** xref:demo-ldap-server.adoc[To Configure the Demo LDAP Server]
+*** xref:ext-analytics-elk.adoc[To Analyze Business and API Data using ELK]

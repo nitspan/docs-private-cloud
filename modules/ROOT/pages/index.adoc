@@ -15,11 +15,8 @@ The Anypoint Platform Private Cloud Edition uses Docker and Kubernetes to provid
 
 == See Also
 
-* xref:system-requirements.adoc[About Minimum System Requirements]
+* xref:prereq-workflow.adoc[Workflow: Install and Verify Prerequisites for Physical Servers]
 * xref:prereq-workflow.adoc[Workflow: Install and Verify Prerequisites]
-* xref:install-workflow.adoc[Workflow: Install Anypoint Platform Private Cloud Edition]
 * xref:runtime-manager::index.adoc[Runtime Manager]
 * xref:exchange::index.adoc[Anypoint Exchange]
-* xref:api-manager::index.adoc[API Manager]
-* https://www.docker.com/[Docker]
-* https://kubernetes.io/[Kubernetes]
+* xref:2.x@api-manager::index.adoc[API Manager]

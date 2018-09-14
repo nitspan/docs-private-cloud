@@ -1,4 +1,4 @@
-= To Backup and Restore Your System
+= To Backup and Restore Anypoint Private Cloud
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -22,7 +22,7 @@ This command creates an archive of the current system state in: `/var/lib/gravit
 
 == To Perform a System Restore
 
-To restore a system from your backup, use the existing cluster or create a new cluster containing the same number of servers as the cluster being restored. T
+To restore a system from your backup, use the existing cluster or create a new cluster containing the same number of servers as the cluster being restored.
 
 [WARNING]
 You can not perform a backup between different versions of Anypoint Platform Private Cloud Edition. The new installation you create must be using the same version of Anypoint Platform Private Cloud Edition as your backup.
@@ -38,7 +38,7 @@ scp /backup-path/to-restore.tar.gz your_username@remotehost.edu:/var/lib/gravity
 . Restore the cluster from the backup archive:
 +
 ----
-gravity restore /var/lib/gravity/planet/share/to-restore.tar.gz
+sudo gravity restore /var/lib/gravity/planet/share/to-restore.tar.gz
 ----
 
 This will take a few minutes.
@@ -46,4 +46,4 @@ This will take a few minutes.
 == See Also
 
 * xref:install-workflow.adoc[Workflow: Install Anypoint Platform Private Cloud Edition]
-* xref:upgrade.adoc[To Migrate to Anypoint Platform Private Cloud Edition, Version 1.6.x]
+* xref:upgrade.adoc[To Migrate to Anypoint Platform Private Cloud Edition, Version 1.7.x]
