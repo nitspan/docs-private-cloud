@@ -1,4 +1,4 @@
-= To Analyze Business and API Data using ELK
+= Analyze Business and API Data using ELK
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -134,6 +134,7 @@ output.elasticsearch:
 * If you installed Filebeat using another method, you must
 ** copy `filebeat.template.mule.json` and `filebeat.yml` to the root installation folder of Filebeat
 ** copy the `mule` module folder to the `module` folder of your Filebeat installation.
+== Run Filebeat
 
 . Start Filebeat as a service on your system.
 +

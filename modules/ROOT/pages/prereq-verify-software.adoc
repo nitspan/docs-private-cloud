@@ -1,4 +1,4 @@
-= To Uninstall Unsupported Software
+= Uninstall Unsupported Software
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

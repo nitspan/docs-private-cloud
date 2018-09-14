@@ -1,8 +1,7 @@
-= To Configure the Demo LDAP Server
+= Configure the Demo LDAP Server
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: ldap, on-prem, on premises, external identity
 
 This topic describes how to use the demo LDAP server provided by Anypoint Platform Private Cloud Edition. When installing a single-node configuration, the installer automatically installs a demo LDAP server and configures the platform to use this server for identity management.
 

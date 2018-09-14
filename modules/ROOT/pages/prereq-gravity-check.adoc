@@ -1,4 +1,4 @@
-= To Verify System Requirements for Anypoint Private Cloud on a Physical Server
+= Verify System Requirements for Anypoint Private Cloud on a Physical Server
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

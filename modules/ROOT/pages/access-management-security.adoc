@@ -1,4 +1,4 @@
-= To Configure Security for Anypoint Private Cloud
+= Configure Security for Anypoint Private Cloud
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

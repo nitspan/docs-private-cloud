@@ -1,4 +1,4 @@
-= To Configure DNS on Anypoint Private Cloud
+= Configure DNS on Anypoint Private Cloud
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

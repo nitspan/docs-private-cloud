@@ -1,4 +1,4 @@
-= About Software Requirements for Anypoint Private Cloud
+= Software Requirements for Anypoint Private Cloud
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

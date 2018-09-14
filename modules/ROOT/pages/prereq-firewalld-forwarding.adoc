@@ -2,7 +2,6 @@
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
-:keywords: private cloud, firewalld
 
 `firewalld` is an iptables controller that defines rules for persistent network traffic.
 If you are using `firewalld` with a Red Hat Enterprise Linux (RHEL) 7.3 operating system, you must enable forwarding on the docker0 device.
@@ -18,7 +17,6 @@ systemctl status firewalld.service
 
 If firewalld is installed, this command returns the following:
 
-[source,console,linenums]
 ----
 $ sudo systemctl status firewalld.service
 * firewalld.service - firewalld - dynamic firewall daemon
@@ -27,13 +25,12 @@ Active: inactive (dead)
 Docs: man:firewalld(1)
 ----
 
-If firewalld is not installed, this command returns an error message.
+If `firewalld is not installed, this command returns an error message.
 
 == Enabling Forwarding
 
 To enable forwarding on the docker0 device, run the following commands:
 
-[source,console,linenums]
 ----
 firewall-cmd --permanent --direct --add-rule ipv4 filter FORWARD 1 -o docker0 -j ACCEPT -m comment --comment "docker subnet"
 
@@ -42,7 +39,6 @@ firewall-cmd --permanent --direct --add-rule ipv4 filter FORWARD 1 -s 10.0.0.0/8
 
 To enable forwarding on the 10.0.0.0/8 subnet, run the following commands:
 
-[source,console,linenums]
 ----
 firewall-cmd --permanent --direct --add-rule ipv4 filter INPUT 1 -s 10.0.0.0/8 -j ACCEPT -m comment --comment "docker subnet"
 

@@ -1,4 +1,4 @@
-= To Add a Product License Using Ops Center
+= Add a Product License Using Ops Center
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
