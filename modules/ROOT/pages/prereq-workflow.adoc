@@ -15,7 +15,7 @@ If your system does not meet all of the minimum system requirements, you cannot 
 
 . Understand the basics of https://www.docker.com/[Docker] and https://kubernetes.io/[Kubernetes].
 +
-Although the installation wizard makes it easy for you to install the platform without interacting with either Docker or Kubernetes, it is important to be familiar with how these work for managing and troubleshooting the platform.
+Although the installation wizard enables you to install the platform without using Docker or Kubernetes, it is important to be familiar with how these work for managing and troubleshooting the platform.
 
 . (Optional) Create a Virtual Machine
 

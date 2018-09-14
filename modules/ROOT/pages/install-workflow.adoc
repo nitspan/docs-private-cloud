@@ -3,20 +3,24 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-[WARNING]
-This product was previously named Anypoint Platform On-Premises Edition. Beginning with the 1.5.1 release, it is named Anypoint Platform Private Cloud Edition.
-
 This topic describes the workflow for installing Anypoint Platform Private Cloud Edition.
 
 Before performing this workflow, ensure that you have verified the prerequisites described in xref:prereq-workflow.adoc[Workflow: Install and Verify Prerequisites].
 
-. Run the Anypoint Platform Private Cloud Edition installer as described in xref:install-installer.adoc[To Run the Anypoint Platform Private Cloud Edition Installer].
+. Install Anypoint Platform Private Cloud Edition. You can use the GUI-based installation wizard or run an automated installation from the command line.
+
+* xref:install-installer.adoc[To Run the Anypoint Platform Private Cloud Edition Installer].
+* xref:install-auto-install.adoc[To Install Anypoint Platform Private Cloud Using the Automated Installer].
 
 . Create a load balancer as described in xref:install-create-lb.adoc[To Create a Load Balancer].
 
 . Perform additional installation tasks as described in xref:install-add-tasks.adoc[To Perform Additional Installation Tasks].
 
-. Ensure that you have configured your system to perform regular backups. See xref:backup-and-disaster-recovery.adoc[About Backup and Recovery] for more information.
+. Ensure that you have configured your system to perform regular backups. See xref:backup-and-disaster-recovery.adoc[About Backup and Recovery].
+
+. Configure an external authentication provider. See xref:install-config-ldap-pce.adoc[To Configure LDAP in Anypoint Platform Private Cloud]
+
+. (Optional) Delete the default Anypoint Platform user created during installation. See xref:install-disable-local-user.adoc[To Delete the Local User after Installing Private Cloud Edition].
 
 . (Optional) Install Anypoint Platform for PCF
 +

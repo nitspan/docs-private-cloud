@@ -1,62 +1,58 @@
-= Demo LDAP Server
+= About the Demo LDAP Server
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :keywords: ldap, on-prem, on premises, external identity
 
-== Overview
-
-When you install the Anypoint Platform Private Cloud Edition, one of the steps on the wizard asks you to select an installation "flavour", allowing you to choose between a 1 server demo installation, a 3 server installation or a 6 server installation.  If you select a *1 server demo installation*, then the installer also automatically takes care of instantiating a demo LDAP server, and configuring the platform to use it. This document takes you through what this server includes.
+This topic describes how to use the demo LDAP server provided by Anypoint Platform Private Cloud Edition. When installing a single-node configuration, the installer automatically installs a demo LDAP server and configures the platform to use this server for identity management.
 
 After the installer finishes, log into your Anypoint Platform installation with credentials of the test users in the LDAP repository.
 
 
 == Default Data in the LDAP Server
 
-The demo LDAP server is populated with some users and groups for demo purposes. You can add your own users and groups too.
+During installation, the demo LDAP server is populated with users and groups for demo purposes. You can add your additional users and groups. The server is populated with two groups, each of which is mapped to a Business Group on the platform:
 
-The server is populated with two groups, each of which is mapped to a Business Group on the platform:
+* Marketing
+* Sales
 
-. Marketing
-. Sales
+The server is also populated with multiple users, each with different roles within different business groups.
 
-The server is populated with test 7 users, each with different roles within the different business groups:
+**Note:** Each of these users are created with the default password as `Mule1234!`.
 
-. Organization Administrator
-** User: `admin`
-. API Creator
-** User: `apicreator`
-. Runtime Manager Administrator
-** User: `ARMadmin`
-. Log Viewer
-** User: `logviewer`
-. Marketing Business Group Administrator
-** User: `MarketingAdmin` (limited to the Marketing business group)
-. API Portal Viewer
-** User: `portalviewer`
-. Sales Business Group Administrator
-** User: `SalesAdmin`  (limited to the Sales business group)
+[%header,cols="2*a"]
+|===
+|Username |User ID
+| Organization Administrator | `admin`
+| API Creator | `apicreator`
+| Runtime Manager Administrator |`ARMadmin`
+| Log Viewer |`logviewer`
+| Marketing Business Group Administrator |`MarketingAdmin` (limited to the Marketing business group)
+| API Portal Viewer |`portalviewer`
+| Sales Business Group Administrator |`SalesAdmin`  (limited to the Sales business group)
+|===
 
-[NOTE]
-*All of the above users are registered with the same password*:
-`Mule1234!`
 
 == Accessing the LDAP Server
 
-If you wish to edit the default data in the LDAP server, you can access it as an administrator and modify anything you want. To do so:
+To edit the default data in the LDAP server, you can access it as an administrator at the following URL:
 
-. Once the installation is complete, open `http://<public_ip_of_your_installation>:31200/` in a browser
-. Log in with:
-** DIN: `uid=admin,ou=people,dc=mulesoft,dc=local`
-** Password: `Mule1234!`
-. Once in the console, you're free to add/edit/remove users and groups at will.
+----
+http://<public_ip_of_your_installation>:31200/
+----
+
+Using these credentials:
+
+** DIN: `cn=admin,dc=mulesoft,dc=local`
+** Password: `Password1`
 
 == Testing the Installation
 
-After the installation is complete, sign on to Anypoint Platform with any of the test users covered in the section above.
+After the installation is complete, sign on to Anypoint Platform as one the test users described above.
 
 . Open a browser and login into the Anypoint Platform using the *MarketingAdmin* user.
-. If the LDAP configuration worked, you can reach the Anypoint Platform landing page:
++
+If the LDAP configuration worked, you can reach the Anypoint Platform landing page:
 +
 image::demo-ldap-server-5f4ad.png[]
 

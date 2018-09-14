@@ -3,10 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-[WARNING]
-This product was previously named Anypoint Platform On-Premises Edition. Beginning with the 1.5.1 release, it is named Anypoint Platform Private Cloud Edition.
-
-Anypoint Platform Private Cloud Edition must be run in production environment with multiple servers. To distribute traffic amonng servers and to restrict access to specific ports, you must install and configure a load balancer.
+Anypoint Platform Private Cloud Edition must be run in production environment with multiple servers. To distribute traffic among servers and to restrict access to specific ports, you must install and configure a load balancer.
 
 [NOTE]
 In a single server development environment, MuleSoft recommends using a load balancer.
@@ -28,7 +25,7 @@ Your load balancer must route the following TCP ports:
 
 In each case, your load balancer must listen on the Load Balancer Port and redirect incoming requests to the Instance Port. Your  Anypoint Platform installation includes an internal NGINX server that listens on each of the configured instance ports, then performs the action listed in the Internal Usage column.
 
-Your load balancer should poll the address `HTTPS:10248/healthz` to run a health check on your platform servers and confirm that they are accessible.
+Your load balancer should poll the address `HTTP:10248/healthz` to run a health check on your platform servers and confirm that they are accessible.
 
 
 [NOTE]
@@ -36,7 +33,7 @@ You do not need to configure SSL credentials in your load balancer. You can conf
 
 == To Configure a Load Balancer
 
-. Enable stream block in your `/etc/nginx/nginx.conf` file, by referencing all the config from `/etc/nginx/stream.d/*`. You can achieve that by adding the following:
+. Enable stream block in your `/etc/nginx/nginx.conf` file, by referencing all the configuration properties defined in `/etc/nginx/stream.d/*`. You can achieve that by adding the following:
 +
 [source,json,linenums]
 ----
