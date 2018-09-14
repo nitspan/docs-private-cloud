@@ -1,0 +1,22 @@
+= Anypoint Platform Private Cloud Edition
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+[NOTE]
+For more information regarding Anypoint Platform Private Cloud Edition, please contact your MuleSoft account team.
+
+
+This section shows you how to install and use both the *Anypoint Platform Private Cloud Edition* and the *Runtime Manager Private Cloud Edition*. The Anypoint Platform Private Cloud Edition offers all of the features that are available in the online version of the https://anypoint.mulesoft.com[Anypoint Platform] as a service that you can run on your local servers, guarded by any security policies you may require.
+
+When you choose to run Anypoint Platform Private Cloud Edition, MuleSoft systems do not interact with your data at all. You configure and run the software and handle all storing, processing and transmitting of data directly, without interference from MuleSoft.
+
+
+
+
+
+
+* xref:installing-anypoint-on-premises.adoc[Installing Anypoint On-Premises]
+* xref:api-manager::index.adoc[API Manager]
+* xref:runtime-manager::index.adoc[Anypoint Runtime Manager]
+* xref:access-management::index.adoc[Access Management]
