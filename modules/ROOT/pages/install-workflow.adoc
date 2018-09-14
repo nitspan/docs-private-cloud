@@ -1,0 +1,25 @@
+= Workflow: Install Anypoint Platform Private Cloud Edition
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+[WARNING]
+This product was previously named Anypoint Platform On-Premises Edition. Beginning with the 1.5.1 release, it is named Anypoint Platform Private Cloud Edition.
+
+This topic describes the workflow for installing Anypoint Platform Private Cloud Edition.
+
+Before performing this workflow, ensure that you have verified the prerequisites described in xref:prereq-workflow.adoc[Workflow: Install and Verify Prerequisites].
+
+. Run the Anypoint Platform Private Cloud Edition installer as described in xref:install-installer.adoc[To Run the Anypoint Platform Private Cloud Edition Installer].
+
+. Create a load balancer as described in xref:install-create-lb.adoc[To Create a Load Balancer].
+
+. Perform additional installation tasks as described in xref:install-add-tasks.adoc[To Perform Additional Installation Tasks].
+
+. Ensure that you have configured your system to perform regular backups. See xref:backup-and-disaster-recovery.adoc[About Backup and Recovery] for more information.
+
+. (Optional) Install Anypoint Platform for PCF
++
+To deploy your applications to Pivotal Cloud Foundry, complete the xref:1.5@anypoint-platform-pcf::pcf-workflow.adoc[Workflow: Install, Configure, and Use Anypoint Platform for PCF].
+
+After completing the steps in this workflow, you can deploy and manage applications, register APIs and use the API Exchange on an Anypoint Platform environment running on your own local network.
