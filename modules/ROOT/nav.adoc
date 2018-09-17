@@ -1,4 +1,5 @@
 .xref:index.adoc[About Anypoint Platform Private Cloud Edition]
+* xref:index.adoc[About Anypoint Platform Private Cloud Edition]
 * xref:supported-cluster-config.adoc[About Supported Network Topologies for Anypoint Private Cloud Edition]
 * xref:prereq-workflow.adoc[Workflow: Install and Verify Prerequisites for Physical Servers]
  ** xref:prereq-hardware.adoc[About Private Cloud Edition Hardware Requirements]
