@@ -1,4 +1,5 @@
 .xref:index.adoc[About Anypoint Platform Private Cloud Edition]
+* xref:index.adoc[About Anypoint Platform Private Cloud Edition]
 * xref:system-requirements.adoc[About Minimum System Requirements]
 * xref:prereq-workflow.adoc[Workflow: Verify Prerequisites]
  ** xref:prereq-verify.adoc[To Verify System Requirements]
