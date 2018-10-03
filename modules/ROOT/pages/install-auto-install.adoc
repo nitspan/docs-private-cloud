@@ -77,7 +77,7 @@ Using the following values:
 Use the same values you provided in the previous command.
 +
 ----
-sudo ./gravity join <installer_IP> --advertise-addr=<node_IP> --token=<secret_token> --docker-device=<device> --role=<role>
+sudo ./gravity join <installer_IP> --advertise-addr=<node_IP> --token=<secret_token> --docker-device=<device> --role=<role> --cloud-provider=generic
 ----
 +
 This command causes each of the nodes to join the cluster created by the `./gravity install` command.
